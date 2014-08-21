@@ -1,1 +1,2 @@
 django-beta was originally created by Frank Wiles <frank@revsys.com> 
+Rudy added some basic email functionality at the cost of hijacking the "Registered" hook
