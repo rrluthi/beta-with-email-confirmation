@@ -8,7 +8,6 @@ from django.template import Context
 from django.template.loader import get_template
 from postmark import PMMail
 from beta.forms import BetaSignupForm
-from caseworx.settings import POSTMARK_SENDER
 from beta.models import BetaSignup
 
 
@@ -30,7 +29,7 @@ class Signup(generic.CreateView):
 
         message = PMMail(api_key=os.environ.get('POSTMARK_API_KEY'),
                          subject=subject,
-                         sender=POSTMARK_SENDER,
+                         sender=os.environ.get('POSTMARK_SENDER'),
                          to=to,
                          html_body=body,
                          tag="hello")

@@ -17,7 +17,7 @@ Installation
 ============
 For emailing this uses postmarkapp, so pip install python-postmark.
 Sign up for postmarkapp and get a key and verify your sender's email.
-Add POSTMARK_API_KEY to your settings.py
+Add POSTMARK_API_KEY and POSTMARK_SENDER to your settings.py
 
 Add ``beta`` to your ``INSTALLED_APPS`` and run syncdb.
 
@@ -40,7 +40,7 @@ BetaSignup.objects.not_registered()
 Side Effects
 ------------
 
-``django-beta`` listens for a signal on User creation and marks the
+``beta-with-email-confirmation`` listens for a signal on User creation and marks the
 corresponding BetaSignup entry as 'registered'.
 
 

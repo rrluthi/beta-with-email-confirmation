@@ -1,2 +1,1 @@
-django-beta was originally created by Frank Wiles <frank@revsys.com>
-rudy has added some stuff <rudy@designs-machinations.com>
+django-beta was originally created by Frank Wiles <frank@revsys.com> 
