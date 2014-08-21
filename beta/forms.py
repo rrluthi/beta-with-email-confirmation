@@ -17,8 +17,7 @@ class BetaSignupForm(forms.ModelForm):
             self.fields['first_name'].required = True 
 
         elif not self.capture_both:
-            self.fields.pop('first'
-                            '_name')
+            self.fields.pop('first_name')
             self.fields.pop('last_name')
         else:
             self.fields['first_name'].required = True 
